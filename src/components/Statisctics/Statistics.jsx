@@ -1,11 +1,15 @@
 import {List} from './Statistics.styled'
 
-export const Statisctics = ({ currentState, options, totalFeedback, positivePercentage }) => {
+export const Statisctics = ({ good, neutral, bad, totalFeedback, positivePercentage }) => {
     return (
         <List>
-            {  options.map(option => 
+            {/* {  options.map(option => 
                 <li key={option}>{option}: {currentState[option]}</li>
-            )}
+            )} */}
+
+            <li>Good: { good }</li>
+            <li>Neutral: { neutral}</li>
+            <li>Bad: { bad}</li>
 
             <li>
             <p> Total feedback: {totalFeedback}</p> 
